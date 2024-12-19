@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz di Informatica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 style="border-top-width: 70px;border-top-style: solid;">Quiz di Informatica</h1>
+        <form id="quizForm">
+            <!-- Domande a scelta multipla -->
+            <div class="question">
+                <p>1. Quale linguaggio è noto per essere il "padre" della programmazione moderna?</p>
+                <input type="radio" name="q1" value="C" required> C<br>
+                <input type="radio" name="q1" value="Python"> Python<br>
+                <input type="radio" name="q1" value="Java"> Java
+            </div>
+
+            <div class="question">
+                <p>2. Che cosa significa l'acronimo HTML?</p>
+                <input type="radio" name="q2" value="HyperText Markup Language" required> HyperText Markup Language<br>
+                <input type="radio" name="q2" value="HyperTool Machine Learning"> HyperTool Machine Learning<br>
+                <input type="radio" name="q2" value="Hyperlink Text Main Loop"> Hyperlink Text Main Loop
+            </div>
+
+            <div class="question">
+                <p>3. Qual è il sistema operativo open-source più utilizzato nei server?</p>
+                <input type="radio" name="q3" value="Linux" required> Linux<br>
+                <input type="radio" name="q3" value="Windows Server"> Windows Server<br>
+                <input type="radio" name="q3" value="macOS"> macOS
+            </div>
+
+            <!-- Domande aperte -->
+            <div class="question">
+                <p>4. Cos'è una socket?</p>
+                <textarea name="q4" rows="3" required></textarea>
+            </div>
+
+            <div class="question">
+                <p>5. Qual è la differenza tra TCP e UDP?</p>
+                <textarea name="q5" rows="3" required></textarea>
+            </div>
+
+            <div class="question">
+                <p>6. Cos'è un database?</p>
+                <textarea name="q6" rows="3" required></textarea>
+            </div>
+
+            <button type="button" id="submitBtn">Invia</button>
+        </form>
+        <div class="results" id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
